@@ -28,6 +28,9 @@
     box-shadow: none;
     outline: none;
 }
+.buttons p{
+    text-align: center;
+}
 .buttons .sign {
     background-color: orange;
     color: white;
