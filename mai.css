@@ -2,7 +2,7 @@
     width: 220px;
     background-color: #131212;
     padding: 10px;
-    
+    margin: 0 auto;
 }
 
 .display {
@@ -12,34 +12,47 @@
     color: white;
     text-align: right;
     font-size: 30px;
-}
+    box-sizing: border-box;
 
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
 .buttons button {
     background-color: rgb(70, 69, 69);
     color:white;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin: 5px;
     font-size: 18px;
-    text-align: center;
     cursor: pointer;
     border: none;
     box-shadow: none;
     outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
 }
 .buttons p{
     text-align: center;
 }
+
 .buttons .sign {
     background-color: orange;
     color: white;
 }
 .buttons .zero{
-    width: 80px;
+    grid-column: span 2;
+    width: 90px;
     height: 40px;
-    border-radius: 15px;
-    margin: 10px;
+    border-radius: 25px;
+    margin: 0;
+    
 }
 .buttons .ac{
     background-color: grey;
